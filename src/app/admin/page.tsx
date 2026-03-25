@@ -33,7 +33,7 @@ export default async function AdminPage({
       {error ? <Notice tone="error">{error}</Notice> : null}
 
       <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <Panel className="surface-grid p-8 sm:p-10">
+        <Panel className="surface-grid p-8 sm:p-10 reveal-up">
           <span className="eyebrow">Admin dashboard</span>
           <h1 className="mt-5 font-display text-6xl leading-[0.92] text-slate-950">Subscriptions, draw logic, charities, and payout controls in one place.</h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-700">
@@ -64,7 +64,7 @@ export default async function AdminPage({
           </div>
         </Panel>
 
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up reveal-delay-1">
           <span className="eyebrow">Draw studio</span>
           <form action={simulateDrawAction} className="mt-6 grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -141,7 +141,7 @@ export default async function AdminPage({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up">
           <div className="flex items-end justify-between gap-4">
             <div>
               <span className="eyebrow">User management</span>
@@ -235,7 +235,7 @@ export default async function AdminPage({
         </Panel>
 
         <div className="grid gap-6">
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-1">
             <span className="eyebrow">Charity management</span>
             <div className="mt-6 grid gap-5">
               <form action={saveCharityAction} className="rounded-[26px] border border-slate-950/8 bg-white/75 p-5">
@@ -311,7 +311,7 @@ export default async function AdminPage({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up">
           <span className="eyebrow">Winner verification</span>
           <div className="mt-6 space-y-5">
             {publishedDraws.map((draw) => (
@@ -417,7 +417,7 @@ export default async function AdminPage({
         </Panel>
 
         <div className="grid gap-6">
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-1">
             <span className="eyebrow">Reports & analytics</span>
             <div className="mt-6 space-y-4">
               {db.charities.map((charity) => (
@@ -434,7 +434,7 @@ export default async function AdminPage({
             </div>
           </Panel>
 
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-2">
             <span className="eyebrow">Activity log</span>
             <div className="mt-6 space-y-3">
               {db.activity.map((item) => (

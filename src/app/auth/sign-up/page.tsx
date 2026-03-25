@@ -27,7 +27,7 @@ export default async function SignUpPage({
   return (
     <div className="mx-auto max-w-6xl">
       <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <Panel className="p-8 sm:p-10">
+        <Panel className="p-8 sm:p-10 reveal-up">
           <span className="eyebrow">Start subscription</span>
           <h1 className="mt-5 font-display text-6xl leading-[0.92] text-slate-950">Set up your profile, plan, and charity in one flow.</h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-700">
@@ -133,7 +133,7 @@ export default async function SignUpPage({
           </form>
         </Panel>
 
-        <Panel className="surface-grid p-8 sm:p-10">
+        <Panel className="surface-grid p-8 sm:p-10 reveal-up reveal-delay-1">
           <span className="eyebrow">What you get</span>
           <div className="mt-6 space-y-5">
             {[

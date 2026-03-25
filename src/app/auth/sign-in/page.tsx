@@ -25,7 +25,7 @@ export default async function SignInPage({
   return (
     <div className="mx-auto max-w-5xl">
       <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <Panel className="p-8 sm:p-10">
+        <Panel className="p-8 sm:p-10 reveal-up">
           <span className="eyebrow">Member access</span>
           <h1 className="mt-5 font-display text-6xl leading-[0.92] text-slate-950">Return to your draw dashboard.</h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-700">
@@ -56,7 +56,7 @@ export default async function SignInPage({
           </form>
         </Panel>
 
-        <Panel className="surface-grid p-8 sm:p-10">
+        <Panel className="surface-grid p-8 sm:p-10 reveal-up reveal-delay-1">
           <span className="eyebrow">Seed credentials</span>
           <div className="mt-5 space-y-6">
             <div className="rounded-[26px] border border-slate-950/8 bg-white/75 p-5">

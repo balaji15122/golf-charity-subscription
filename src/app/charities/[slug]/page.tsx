@@ -27,7 +27,7 @@ export default async function CharityDetailPage({
 
   return (
     <div className="space-y-6">
-      <Panel className="p-8 sm:p-10">
+      <Panel className="p-8 sm:p-10 reveal-up">
         <div className="grid gap-6 lg:grid-cols-[1fr_0.85fr]">
           <div>
             <span className="eyebrow">{charity.category}</span>
@@ -71,7 +71,7 @@ export default async function CharityDetailPage({
       </Panel>
 
       <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up">
           <span className="eyebrow">Upcoming events</span>
           <div className="mt-6 space-y-4">
             {charity.upcomingEvents.map((event) => (
@@ -84,7 +84,7 @@ export default async function CharityDetailPage({
           </div>
         </Panel>
 
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up reveal-delay-1">
           <span className="eyebrow">Support this charity</span>
           <p className="mt-5 text-base leading-7 text-slate-700">
             Members can direct a percentage of their subscription here and optionally pledge additional one-off

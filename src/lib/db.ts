@@ -1,26 +1,41 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { createDrawSimulation, hydrateSubscriptions } from "@/lib/draws";
 import { ActivityItem, Charity, Database, DrawFocus, DrawMode, User } from "@/lib/types";
 import { createId, getCurrentMonthKey, nowIso, slugify } from "@/lib/utils";
 
-const DB_PATH = path.join(process.cwd(), "data", "store.json");
-const UPLOADS_PATH = path.join(process.cwd(), "public", "uploads");
+const SEED_DB_PATH = path.join(process.cwd(), "data", "store.json");
+const USE_TMP_STORE = Boolean(process.env.VERCEL || process.env.USE_TMP_STORE === "1");
+const STORE_DIRECTORY = USE_TMP_STORE ? path.join("/tmp", "golf-for-good") : path.join(process.cwd(), "data");
+const DB_PATH = path.join(STORE_DIRECTORY, "store.json");
 
 let writeQueue = Promise.resolve();
 
+async function ensureDatabaseFile() {
+  await mkdir(STORE_DIRECTORY, { recursive: true });
+
+  try {
+    await access(DB_PATH);
+  } catch {
+    if (DB_PATH === SEED_DB_PATH) {
+      return;
+    }
+
+    const seed = await readFile(SEED_DB_PATH, "utf8");
+    await writeFile(DB_PATH, seed);
+  }
+}
+
 async function readRawDatabase() {
+  await ensureDatabaseFile();
   const raw = await readFile(DB_PATH, "utf8");
   return JSON.parse(raw) as Database;
 }
 
 async function writeRawDatabase(db: Database) {
+  await ensureDatabaseFile();
   await writeFile(DB_PATH, JSON.stringify(db, null, 2));
-}
-
-export async function ensureUploadDirectory() {
-  await mkdir(UPLOADS_PATH, { recursive: true });
 }
 
 export async function readDatabase() {

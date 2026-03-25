@@ -54,7 +54,7 @@ export default async function DashboardPage({
       {error ? <Notice tone="error">{error}</Notice> : null}
 
       <section className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
-        <Panel className="surface-grid p-8 sm:p-10">
+        <Panel className="surface-grid p-8 sm:p-10 reveal-up">
           <span className="eyebrow">Subscriber dashboard</span>
           <div className="mt-5 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
@@ -93,7 +93,7 @@ export default async function DashboardPage({
           </div>
         </Panel>
 
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up reveal-delay-1">
           <span className="eyebrow">Membership controls</span>
           <div className="mt-5 space-y-4">
             <div className="rounded-[24px] bg-slate-950 px-5 py-5 text-white">
@@ -149,7 +149,7 @@ export default async function DashboardPage({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up">
           <div className="flex items-end justify-between gap-4">
             <div>
               <span className="eyebrow">Score management</span>
@@ -190,7 +190,7 @@ export default async function DashboardPage({
             </div>
           </form>
 
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 space-y-4 reveal-group">
             {user.scores.map((score) => (
               <form key={score.id} action={updateScoreAction} className="grid gap-4 rounded-[24px] border border-slate-950/8 bg-white/75 p-4 md:grid-cols-[0.8fr_1fr_auto]">
                 <input type="hidden" name="scoreId" value={score.id} />
@@ -213,7 +213,7 @@ export default async function DashboardPage({
         </Panel>
 
         <div className="grid gap-6">
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-1">
             <span className="eyebrow">Charity settings</span>
             <h2 className="mt-4 font-display text-4xl text-slate-950">Keep your impact aligned.</h2>
             <form action={updateCharityPreferenceAction} className="mt-6 grid gap-4">
@@ -269,7 +269,7 @@ export default async function DashboardPage({
             </form>
           </Panel>
 
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-2">
             <span className="eyebrow">Profile</span>
             <form action={updateProfileAction} className="mt-6 grid gap-4">
               <div>
@@ -303,7 +303,7 @@ export default async function DashboardPage({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
-        <Panel className="p-7">
+        <Panel className="p-7 reveal-up">
           <div className="flex items-end justify-between gap-4">
             <div>
               <span className="eyebrow">Participation & winnings</span>
@@ -364,7 +364,7 @@ export default async function DashboardPage({
         </Panel>
 
         <div className="grid gap-6">
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-1">
             <span className="eyebrow">Proof upload</span>
             <div className="mt-6 space-y-4">
               {pendingProofs.length === 0 ? (
@@ -395,7 +395,7 @@ export default async function DashboardPage({
             </div>
           </Panel>
 
-          <Panel className="p-7">
+          <Panel className="p-7 reveal-up reveal-delay-2">
             <span className="eyebrow">Notifications</span>
             <div className="mt-6 space-y-3">
               {user.notifications.map((notification) => (

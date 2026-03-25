@@ -35,7 +35,7 @@ export default async function CharitiesPage({
 
   return (
     <div className="space-y-6">
-      <Panel className="p-8 sm:p-10">
+      <Panel className="p-8 sm:p-10 reveal-up">
         <span className="eyebrow">Charity directory</span>
         <div className="mt-5 grid gap-5 lg:grid-cols-[1fr_0.9fr]">
           <div>
@@ -77,7 +77,7 @@ export default async function CharitiesPage({
           <Link
             key={charity.id}
             href={`/charities/${charity.slug}`}
-            className="group rounded-[30px] border border-white/60 bg-white/80 p-5 shadow-[0_20px_60px_rgba(18,36,30,0.08)] transition hover:-translate-y-1"
+            className="group spotlight-card rounded-[30px] border border-white/60 bg-white/80 p-5 shadow-[0_20px_60px_rgba(18,36,30,0.08)] transition hover:-translate-y-1"
           >
             <Image
               alt={charity.name}

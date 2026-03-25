@@ -1,8 +1,5 @@
 "use server";
 
-import { extname, join } from "node:path";
-import { writeFile } from "node:fs/promises";
-
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -10,7 +7,6 @@ import { createSessionForUser, destroySession, requireUser } from "@/lib/auth";
 import { DRAW_TIER_LABELS } from "@/lib/constants";
 import {
   addActivity,
-  ensureUploadDirectory,
   readDatabase,
   replaceOrInsertDraft,
   updateDatabase,
@@ -23,7 +19,6 @@ import {
   hashPassword,
   nowIso,
   sanitizeScore,
-  slugify,
   subscriptionHasAccess,
   toNumber,
   toStringValue,
@@ -367,12 +362,15 @@ export async function uploadWinnerProofAction(formData: FormData) {
     redirectWith("/dashboard", "error", "Please choose an image file before uploading.");
   }
 
-  await ensureUploadDirectory();
+  if (!proof.type.startsWith("image/")) {
+    redirectWith("/dashboard", "error", "Only image uploads are supported for winner proof.");
+  }
 
-  const extension = extname(proof.name) || ".png";
-  const fileName = `${slugify(currentUser.name)}-${winnerId}${extension}`;
-  const relativePath = `/uploads/${fileName}`;
-  await writeFile(join(process.cwd(), "public", "uploads", fileName), Buffer.from(await proof.arrayBuffer()));
+  if (proof.size > 2 * 1024 * 1024) {
+    redirectWith("/dashboard", "error", "Please upload an image smaller than 2MB.");
+  }
+
+  const proofAsset = `data:${proof.type};base64,${Buffer.from(await proof.arrayBuffer()).toString("base64")}`;
 
   await updateDatabase((db) => {
     const user = db.users.find((entry) => entry.id === currentUser.id);
@@ -385,7 +383,7 @@ export async function uploadWinnerProofAction(formData: FormData) {
     }
 
     winner.proofStatus = "pending_review";
-    winner.proofAsset = relativePath;
+    winner.proofAsset = proofAsset;
     winner.proofSubmittedAt = nowIso();
     pushNotification(
       user,
