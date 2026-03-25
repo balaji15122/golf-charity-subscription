@@ -1,0 +1,633 @@
+{
+  "config": {
+    "currency": "USD",
+    "planPricing": {
+      "monthly": 39,
+      "yearly": 399
+    },
+    "minimumCharityPercentage": 10,
+    "prizeContributionRate": 0.42,
+    "featuredCharityId": "charity_links",
+    "monthlyDrawDay": 28
+  },
+  "sessions": [
+    {
+      "token": "session_da835e47",
+      "userId": "user_admin",
+      "createdAt": "2026-03-25T02:56:58.567Z",
+      "expiresAt": "2026-04-01T02:56:58.567Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_admin",
+      "role": "admin",
+      "name": "Avery Stone",
+      "email": "admin@golfforgood.com",
+      "passwordHash": "saltadmin12345678:59a38dd7f08dd7d77042a270ce79dd2dd85aa7ef3555bb69249944bdfd91e41df24a59eeb01a0b6ef7cf910295fd567f5a54b4f6a8228397476f2d252efa9878",
+      "country": "United States",
+      "bio": "Platform operator overseeing subscriptions, draw integrity, and charity performance.",
+      "createdAt": "2026-01-05T10:00:00.000Z",
+      "selectedCharityId": "charity_links",
+      "charityPercentage": 10,
+      "subscription": {
+        "plan": "yearly",
+        "status": "active",
+        "startedAt": "2026-01-05T10:00:00.000Z",
+        "renewalDate": "2027-01-05T10:00:00.000Z",
+        "autoRenew": true,
+        "cancelledAt": null,
+        "lastPaymentAt": "2026-01-05T10:00:00.000Z"
+      },
+      "scores": [
+        {
+          "id": "score_admin_1",
+          "value": 30,
+          "playedAt": "2026-02-20",
+          "createdAt": "2026-02-20T10:00:00.000Z"
+        },
+        {
+          "id": "score_admin_2",
+          "value": 33,
+          "playedAt": "2026-02-27",
+          "createdAt": "2026-02-27T10:00:00.000Z"
+        },
+        {
+          "id": "score_admin_3",
+          "value": 29,
+          "playedAt": "2026-03-05",
+          "createdAt": "2026-03-05T10:00:00.000Z"
+        },
+        {
+          "id": "score_admin_4",
+          "value": 32,
+          "playedAt": "2026-03-12",
+          "createdAt": "2026-03-12T10:00:00.000Z"
+        },
+        {
+          "id": "score_admin_5",
+          "value": 31,
+          "playedAt": "2026-03-19",
+          "createdAt": "2026-03-19T10:00:00.000Z"
+        }
+      ],
+      "notifications": [
+        {
+          "id": "note_5e4d9cf2",
+          "type": "draw",
+          "title": "Draw results published",
+          "body": "Results for 2026-03 are live. Open your dashboard to review the numbers.",
+          "createdAt": "2026-03-25T02:57:09.268Z",
+          "read": false
+        },
+        {
+          "id": "note_admin_1",
+          "type": "system",
+          "title": "Admin access ready",
+          "body": "Seeded admin account created with full dashboard access.",
+          "createdAt": "2026-03-01T08:00:00.000Z",
+          "read": false
+        }
+      ]
+    },
+    {
+      "id": "user_maya",
+      "role": "subscriber",
+      "name": "Maya Ortiz",
+      "email": "maya@golfforgood.com",
+      "passwordHash": "saltmaya123456789:04fd140a726edb881796a814cb539234a8cb2a0f0d839c422085a1d2dd380e12dbe0d606168811a368f73fd33d1687ba0e944d217804058a94c934e8de600bcf",
+      "country": "United States",
+      "bio": "Weekend player raising money for youth outdoor access.",
+      "createdAt": "2026-01-14T12:00:00.000Z",
+      "selectedCharityId": "charity_links",
+      "charityPercentage": 18,
+      "subscription": {
+        "plan": "monthly",
+        "status": "active",
+        "startedAt": "2026-02-14T12:00:00.000Z",
+        "renewalDate": "2026-04-14T12:00:00.000Z",
+        "autoRenew": true,
+        "cancelledAt": null,
+        "lastPaymentAt": "2026-03-14T12:00:00.000Z"
+      },
+      "scores": [
+        {
+          "id": "score_maya_1",
+          "value": 34,
+          "playedAt": "2026-02-16",
+          "createdAt": "2026-02-16T12:00:00.000Z"
+        },
+        {
+          "id": "score_maya_2",
+          "value": 31,
+          "playedAt": "2026-02-22",
+          "createdAt": "2026-02-22T12:00:00.000Z"
+        },
+        {
+          "id": "score_maya_3",
+          "value": 29,
+          "playedAt": "2026-03-01",
+          "createdAt": "2026-03-01T12:00:00.000Z"
+        },
+        {
+          "id": "score_maya_4",
+          "value": 36,
+          "playedAt": "2026-03-10",
+          "createdAt": "2026-03-10T12:00:00.000Z"
+        },
+        {
+          "id": "score_maya_5",
+          "value": 33,
+          "playedAt": "2026-03-18",
+          "createdAt": "2026-03-18T12:00:00.000Z"
+        }
+      ],
+      "notifications": [
+        {
+          "id": "note_6e54f2ed",
+          "type": "winner",
+          "title": "You placed in this month’s draw",
+          "body": "A 4-number match has been logged. Upload proof to continue payout review.",
+          "createdAt": "2026-03-25T02:57:09.268Z",
+          "read": false
+        },
+        {
+          "id": "note_4762bdf4",
+          "type": "draw",
+          "title": "Draw results published",
+          "body": "Results for 2026-03 are live. Open your dashboard to review the numbers.",
+          "createdAt": "2026-03-25T02:57:09.268Z",
+          "read": false
+        },
+        {
+          "id": "note_maya_1",
+          "type": "winner",
+          "title": "You placed in February",
+          "body": "A 4-number match is waiting for proof review upload.",
+          "createdAt": "2026-03-01T09:00:00.000Z",
+          "read": false
+        }
+      ]
+    },
+    {
+      "id": "user_daniel",
+      "role": "subscriber",
+      "name": "Daniel Cho",
+      "email": "daniel@golfforgood.com",
+      "passwordHash": "saltdaniel1234567:2e5003c16ac7a0f3fd9f1c16e4d6deec0494300749ed7fa9fd66c3d4092ad45d0826e84212f55d37bac380f8fafee05d88bd0cb367df38e153aff5028113c8c0",
+      "country": "Canada",
+      "bio": "Corporate member combining annual membership with one-off donations.",
+      "createdAt": "2026-01-20T14:00:00.000Z",
+      "selectedCharityId": "charity_tide",
+      "charityPercentage": 12,
+      "subscription": {
+        "plan": "yearly",
+        "status": "active",
+        "startedAt": "2026-01-20T14:00:00.000Z",
+        "renewalDate": "2027-01-20T14:00:00.000Z",
+        "autoRenew": true,
+        "cancelledAt": null,
+        "lastPaymentAt": "2026-01-20T14:00:00.000Z"
+      },
+      "scores": [
+        {
+          "id": "score_daniel_1",
+          "value": 28,
+          "playedAt": "2026-02-12",
+          "createdAt": "2026-02-12T12:00:00.000Z"
+        },
+        {
+          "id": "score_daniel_2",
+          "value": 26,
+          "playedAt": "2026-02-25",
+          "createdAt": "2026-02-25T12:00:00.000Z"
+        },
+        {
+          "id": "score_daniel_3",
+          "value": 30,
+          "playedAt": "2026-03-03",
+          "createdAt": "2026-03-03T12:00:00.000Z"
+        },
+        {
+          "id": "score_daniel_4",
+          "value": 32,
+          "playedAt": "2026-03-11",
+          "createdAt": "2026-03-11T12:00:00.000Z"
+        },
+        {
+          "id": "score_daniel_5",
+          "value": 35,
+          "playedAt": "2026-03-19",
+          "createdAt": "2026-03-19T12:00:00.000Z"
+        }
+      ],
+      "notifications": [
+        {
+          "id": "note_f5a2130d",
+          "type": "draw",
+          "title": "Draw results published",
+          "body": "Results for 2026-03 are live. Open your dashboard to review the numbers.",
+          "createdAt": "2026-03-25T02:57:09.268Z",
+          "read": false
+        },
+        {
+          "id": "note_daniel_1",
+          "type": "draw",
+          "title": "March simulation ready",
+          "body": "A draft draw exists for March and will publish after admin review.",
+          "createdAt": "2026-03-20T10:00:00.000Z",
+          "read": false
+        }
+      ]
+    },
+    {
+      "id": "user_nina",
+      "role": "subscriber",
+      "name": "Nina Kapoor",
+      "email": "nina@golfforgood.com",
+      "passwordHash": "saltnina1234567890:6afc93ee68262426b88e82c24eea8c32921e6ef971a72b95de8ff4edf68b8eaf8ac2549df88401d3c41cbc32571db6a6c2fff284d944360f9b02e31f4ce30268",
+      "country": "India",
+      "bio": "Tracks every round and uses larger charity percentages for special campaigns.",
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "selectedCharityId": "charity_ember",
+      "charityPercentage": 20,
+      "subscription": {
+        "plan": "monthly",
+        "status": "cancelled",
+        "startedAt": "2026-02-01T10:00:00.000Z",
+        "renewalDate": "2026-04-01T10:00:00.000Z",
+        "autoRenew": false,
+        "cancelledAt": "2026-03-20T12:30:00.000Z",
+        "lastPaymentAt": "2026-03-01T10:00:00.000Z"
+      },
+      "scores": [
+        {
+          "id": "score_nina_1",
+          "value": 24,
+          "playedAt": "2026-02-18",
+          "createdAt": "2026-02-18T10:00:00.000Z"
+        },
+        {
+          "id": "score_nina_2",
+          "value": 27,
+          "playedAt": "2026-02-26",
+          "createdAt": "2026-02-26T10:00:00.000Z"
+        },
+        {
+          "id": "score_nina_3",
+          "value": 25,
+          "playedAt": "2026-03-04",
+          "createdAt": "2026-03-04T10:00:00.000Z"
+        },
+        {
+          "id": "score_nina_4",
+          "value": 29,
+          "playedAt": "2026-03-12",
+          "createdAt": "2026-03-12T10:00:00.000Z"
+        },
+        {
+          "id": "score_nina_5",
+          "value": 30,
+          "playedAt": "2026-03-20",
+          "createdAt": "2026-03-20T10:00:00.000Z"
+        }
+      ],
+      "notifications": [
+        {
+          "id": "note_1ae5a84b",
+          "type": "draw",
+          "title": "Draw results published",
+          "body": "Results for 2026-03 are live. Open your dashboard to review the numbers.",
+          "createdAt": "2026-03-25T02:57:09.268Z",
+          "read": false
+        },
+        {
+          "id": "note_nina_1",
+          "type": "system",
+          "title": "Subscription set to cancel",
+          "body": "Access continues until your April 1, 2026 renewal date.",
+          "createdAt": "2026-03-20T12:30:00.000Z",
+          "read": false
+        }
+      ]
+    },
+    {
+      "id": "user_omar",
+      "role": "subscriber",
+      "name": "Omar Reyes",
+      "email": "omar@golfforgood.com",
+      "passwordHash": "saltomar1234567890:d7e121182888675da3843d8a6c3103e096d9334dda9b6ca6a85e4d6c69ffb1bb10bd271041dcb05e1b8b082695a0f8b1f45142ac63abdba08b0ec20e80b34ce4",
+      "country": "United Kingdom",
+      "bio": "Former member retained in the database for lifecycle and lapsed-state testing.",
+      "createdAt": "2026-01-08T08:00:00.000Z",
+      "selectedCharityId": "charity_tide",
+      "charityPercentage": 10,
+      "subscription": {
+        "plan": "monthly",
+        "status": "lapsed",
+        "startedAt": "2026-01-08T08:00:00.000Z",
+        "renewalDate": "2026-03-08T08:00:00.000Z",
+        "autoRenew": false,
+        "cancelledAt": "2026-02-28T08:00:00.000Z",
+        "lastPaymentAt": "2026-02-08T08:00:00.000Z"
+      },
+      "scores": [
+        {
+          "id": "score_omar_1",
+          "value": 20,
+          "playedAt": "2026-01-21",
+          "createdAt": "2026-01-21T08:00:00.000Z"
+        },
+        {
+          "id": "score_omar_2",
+          "value": 22,
+          "playedAt": "2026-02-03",
+          "createdAt": "2026-02-03T08:00:00.000Z"
+        },
+        {
+          "id": "score_omar_3",
+          "value": 18,
+          "playedAt": "2026-02-10",
+          "createdAt": "2026-02-10T08:00:00.000Z"
+        },
+        {
+          "id": "score_omar_4",
+          "value": 21,
+          "playedAt": "2026-02-19",
+          "createdAt": "2026-02-19T08:00:00.000Z"
+        },
+        {
+          "id": "score_omar_5",
+          "value": 23,
+          "playedAt": "2026-02-27",
+          "createdAt": "2026-02-27T08:00:00.000Z"
+        }
+      ],
+      "notifications": []
+    }
+  ],
+  "charities": [
+    {
+      "id": "charity_links",
+      "slug": "links-for-learning",
+      "name": "Links for Learning",
+      "category": "Youth Access",
+      "location": "Scotland",
+      "summary": "Funds school golf days and outdoor confidence programs for first-time players.",
+      "impactHeadline": "Turn every fair round into a first round for a child.",
+      "description": "Links for Learning creates welcoming junior golf experiences in underserved communities. The charity blends mentorship, school partnerships, transport grants, and entry-level equipment so young players can access the game without traditional barriers.",
+      "image": "/charity-links.svg",
+      "featured": true,
+      "acceptingNewSupport": true,
+      "upcomingEvents": [
+        {
+          "id": "event_links_1",
+          "title": "Spring Junior Golf Day",
+          "startsAt": "2026-04-18T09:00:00.000Z",
+          "location": "St Andrews, Scotland"
+        },
+        {
+          "id": "event_links_2",
+          "title": "Mentor Matchplay Clinic",
+          "startsAt": "2026-05-09T11:00:00.000Z",
+          "location": "Edinburgh, Scotland"
+        }
+      ],
+      "tags": [
+        "education",
+        "junior-golf",
+        "community"
+      ]
+    },
+    {
+      "id": "charity_tide",
+      "slug": "tide-and-tee",
+      "name": "Tide & Tee",
+      "category": "Coastal Recovery",
+      "location": "California",
+      "summary": "Pairs coastal restoration with accessible public-course fundraising events.",
+      "impactHeadline": "Clean shorelines, open fairways, measurable local impact.",
+      "description": "Tide & Tee restores coastal wetlands, funds beach cleanups, and hosts fundraising golf days that connect environmental action with community participation. Members receive progress stories tied to specific restoration zones.",
+      "image": "/charity-tide.svg",
+      "featured": false,
+      "acceptingNewSupport": true,
+      "upcomingEvents": [
+        {
+          "id": "event_tide_1",
+          "title": "Pacific Restoration Scramble",
+          "startsAt": "2026-04-27T13:00:00.000Z",
+          "location": "Monterey, California"
+        }
+      ],
+      "tags": [
+        "environment",
+        "public-courses",
+        "coastal"
+      ]
+    },
+    {
+      "id": "charity_ember",
+      "slug": "ember-women-in-sport",
+      "name": "Ember Women in Sport",
+      "category": "Inclusion",
+      "location": "Dubai",
+      "summary": "Supports women-led coaching cohorts, scholarships, and after-work clinics.",
+      "impactHeadline": "Build confidence, coaching pathways, and visible representation.",
+      "description": "Ember Women in Sport backs inclusive golf and leadership programs for women entering the game later in life. Funds support instructors, scholarships, equipment libraries, and regional networking events.",
+      "image": "/charity-ember.svg",
+      "featured": false,
+      "acceptingNewSupport": true,
+      "upcomingEvents": [
+        {
+          "id": "event_ember_1",
+          "title": "Leadership Nine-Hole Evening",
+          "startsAt": "2026-05-14T18:30:00.000Z",
+          "location": "Dubai Hills"
+        }
+      ],
+      "tags": [
+        "women-in-sport",
+        "leadership",
+        "scholarships"
+      ]
+    }
+  ],
+  "donations": [
+    {
+      "id": "donation_1",
+      "userId": "user_daniel",
+      "charityId": "charity_tide",
+      "amount": 120,
+      "note": "Extra support after the February fundraiser.",
+      "createdAt": "2026-03-02T10:30:00.000Z"
+    }
+  ],
+  "draws": [
+    {
+      "id": "draw_2aae0a73",
+      "month": "2026-03",
+      "numbers": [
+        14,
+        28,
+        31,
+        34,
+        42
+      ],
+      "mode": "algorithmic",
+      "focus": "hot",
+      "isPublished": false,
+      "simulationNotes": "Hot-score simulation prepared for March review.",
+      "simulatedAt": "2026-03-25T02:57:14.206Z",
+      "publishedAt": null,
+      "entriesCount": 4,
+      "participants": [
+        "user_admin",
+        "user_maya",
+        "user_daniel",
+        "user_nina"
+      ],
+      "winners": [],
+      "prizePool": {
+        "activeSubscribers": 4,
+        "grossSubscriptions": 876,
+        "basePool": 367.91999999999996,
+        "carriedRollover": 147.168,
+        "totalPool": 515.088,
+        "fiveShare": 294.336,
+        "fourShare": 128.772,
+        "threeShare": 91.97999999999999,
+        "rollover": 294.336
+      }
+    },
+    {
+      "id": "draw_2026_03_draft",
+      "month": "2026-03",
+      "numbers": [
+        24,
+        29,
+        31,
+        33,
+        36
+      ],
+      "mode": "algorithmic",
+      "focus": "hot",
+      "isPublished": true,
+      "simulationNotes": "Hot-score simulation prepared for March review.",
+      "simulatedAt": "2026-03-22T11:00:00.000Z",
+      "publishedAt": "2026-03-25T02:57:09.268Z",
+      "entriesCount": 4,
+      "participants": [
+        "user_admin",
+        "user_maya",
+        "user_daniel",
+        "user_nina"
+      ],
+      "winners": [
+        {
+          "id": "winner_draft_1",
+          "userId": "user_maya",
+          "matchCount": 4,
+          "amount": 74.0775,
+          "proofStatus": "awaiting_upload",
+          "payoutStatus": "pending",
+          "proofAsset": null,
+          "proofSubmittedAt": null,
+          "reviewedAt": null,
+          "reviewNotes": null
+        }
+      ],
+      "prizePool": {
+        "activeSubscribers": 4,
+        "grossSubscriptions": 876,
+        "basePool": 367.92,
+        "carriedRollover": 0,
+        "totalPool": 367.92,
+        "fiveShare": 147.168,
+        "fourShare": 128.772,
+        "threeShare": 91.98,
+        "rollover": 147.168
+      }
+    },
+    {
+      "id": "draw_2026_02_published",
+      "month": "2026-02",
+      "numbers": [
+        12,
+        29,
+        31,
+        34,
+        36
+      ],
+      "mode": "random",
+      "focus": "hot",
+      "isPublished": true,
+      "simulationNotes": "Published February results.",
+      "simulatedAt": "2026-02-28T16:00:00.000Z",
+      "publishedAt": "2026-02-28T18:00:00.000Z",
+      "entriesCount": 4,
+      "participants": [
+        "user_admin",
+        "user_maya",
+        "user_daniel",
+        "user_nina"
+      ],
+      "winners": [
+        {
+          "id": "winner_feb_1",
+          "userId": "user_maya",
+          "matchCount": 4,
+          "amount": 128.772,
+          "proofStatus": "awaiting_upload",
+          "payoutStatus": "pending",
+          "proofAsset": null,
+          "proofSubmittedAt": null,
+          "reviewedAt": null,
+          "reviewNotes": null
+        }
+      ],
+      "prizePool": {
+        "activeSubscribers": 4,
+        "grossSubscriptions": 876,
+        "basePool": 367.92,
+        "carriedRollover": 0,
+        "totalPool": 367.92,
+        "fiveShare": 147.168,
+        "fourShare": 128.772,
+        "threeShare": 91.98,
+        "rollover": 147.168
+      }
+    }
+  ],
+  "activity": [
+    {
+      "id": "activity_12a6ac5b",
+      "type": "draw",
+      "summary": "Admin refreshed the 2026-03 algorithmic simulation.",
+      "createdAt": "2026-03-25T02:57:14.206Z"
+    },
+    {
+      "id": "activity_b9a8c4fe",
+      "type": "draw",
+      "summary": "Admin published draw results for 2026-03.",
+      "createdAt": "2026-03-25T02:57:09.268Z"
+    },
+    {
+      "id": "activity_4cf96eae",
+      "type": "auth",
+      "summary": "Session started for admin@golfforgood.com.",
+      "createdAt": "2026-03-25T02:56:58.568Z"
+    },
+    {
+      "id": "activity_seed_1",
+      "type": "draw",
+      "summary": "March hot-score simulation prepared for admin review.",
+      "createdAt": "2026-03-22T11:00:00.000Z"
+    },
+    {
+      "id": "activity_seed_2",
+      "type": "winner",
+      "summary": "Maya Ortiz secured a February 4-number match and is awaiting proof upload.",
+      "createdAt": "2026-02-28T18:00:00.000Z"
+    }
+  ]
+}
